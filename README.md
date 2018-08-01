@@ -10,3 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## About
 
 Application which uses dummy data from http://jsonplaceholder.typicode.com/ to display photo albums data.
+
+## Things that need to be done
+1. Unit tests
+2. RWD
