@@ -1,0 +1,11 @@
+<mat-toolbar class="bar">
+    <a class="bar-element back-arrow" *ngIf="backUrl" [routerLink]="backUrl">
+        <mat-icon>arrow_back</mat-icon>
+    </a>
+
+    <h1 class="bar-element">{{pageTitle}}</h1>
+</mat-toolbar>
+
+<div class="page-content">
+    <ng-content></ng-content>
+</div>

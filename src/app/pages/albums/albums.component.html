@@ -1,0 +1,29 @@
+<pg-page pageTitle="Albums">
+
+    <mat-list>
+
+        <mat-list-item class="album" *ngFor="let album of albums; let i = index">
+
+            <p mat-line class="ablum-info">
+                <span class="album-number">
+                    {{i+1}}.
+                </span>
+                <span>
+                    {{album.title}}
+                </span>
+            </p>
+
+            <p *ngIf="album.user">
+                <span>
+                    By: {{album.user.name}}
+                </span>
+            </p>
+
+            <button class="album-button user-button" mat-raised-button (click)="showUserInfo(i)">Check user</button>
+            <a class="album-button details-button" mat-raised-button routerLink="/album/{{album.id}}">Details</a>
+
+        </mat-list-item>
+
+    </mat-list>
+
+</pg-page>

@@ -1,0 +1,10 @@
+<mat-sidenav-container>
+    <mat-sidenav [fixedInViewport]="true" mode="side" opened>
+        <mat-nav-list>
+            <a class="link" *ngFor="let link of links" mat-list-item routerLinkActive="active-link" [routerLink]="link.url">{{link.title}}</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

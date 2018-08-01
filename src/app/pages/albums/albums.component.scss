@@ -1,0 +1,27 @@
+mat-list-item {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.album {
+    &:hover {
+        background-color: lightgray;
+    }
+
+    .ablum-info {
+        .album-number {
+            display: inline-block;
+            min-width: 40px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .album-button {
+        min-width: 120px;
+
+        &.user-button{
+            margin: 0px 10px;
+        }
+    }
+}
